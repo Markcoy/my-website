@@ -19,7 +19,7 @@ const Navbar = () => {
   };
 
   const activeIitem =
-    location.pathname === "/hero"
+    location.pathname === "/"
       ? "Home"
       : location.pathname === "/work"
       ? "Projects"
@@ -37,7 +37,7 @@ const Navbar = () => {
           className={`p-5 cursor-pointer transition-colors duration-300 hover:text-violet-300 ${
             activeIitem === "Home" ? "text-violet-500" : ""
           }`}
-          onClick={() => handleItemClick("Home", "/hero")}
+          onClick={() => handleItemClick("Home", "/")}
         >
           Home
         </li>
@@ -97,7 +97,7 @@ const Navbar = () => {
             className={`p-5 cursor-pointer transition-colors duration-300 hover:text-violet-300 ${
               activeIitem === "Home" ? "text-violet-500" : ""
             }`}
-            onClick={() => handleItemClick("Home", "/hero")}
+            onClick={() => handleItemClick("Home", "/")}
           >
             Home
           </li>
