@@ -23,12 +23,13 @@ const About = () => {
                 </h3>
                 <p className="text-justify leading-7 w-11/12 mx auto">
                   "Hello! Welcome to my Page. I am Mark Christian C. Velasco, 23
-                  years old, from Dasmariñas City, Cavite. I am a fourth-year IT
-                  student at De La Salle University - Dasmariñas. My hobbies are
-                  cooking, doing home work outs, and playing mobile games. I
-                  believe in the saying that "If you change your thinking, it
-                  will change your life", thus it is like a domino effect that
-                  affects our whole aspects in life."
+                  years old, from Dasmariñas City, Cavite. I graduated Bs
+                  Information technology specialized in Networking at De La
+                  Salle University - Dasmariñas. My hobbies are cooking, doing
+                  home work outs, and playing mobile games. I believe in the
+                  saying that "If you change your thinking, it will change your
+                  life", thus it is like a domino effect that affects our whole
+                  aspects in life."
                 </p>
               </div>
             </div>
