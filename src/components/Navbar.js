@@ -65,15 +65,6 @@ const Navbar = () => {
         >
           Gallery
         </li>
-
-        <li className="p-5">
-          <span
-            className="cursor-pointer transition-all duration-1000 bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] rounded-xl hover:opacity-100 hover:-inset-5 hover:duration-200 opacity-70 bg-transparent border-transparent border p-1 gradient-border"
-            onClick={() => navigate("/")}
-          >
-            Logout
-          </span>
-        </li>
       </ul>
 
       <div onClick={handleNav} className="block md:hidden">

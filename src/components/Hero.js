@@ -27,9 +27,11 @@ const Hero = () => {
               sequence={[
                 "Frontend Dev",
                 1000,
-                "IT Intern",
+                "UI/UX Designer",
                 1000,
                 "Web Designer",
+                1000,
+                "Network Dev",
                 1000,
               ]}
               wrapper="span"
@@ -40,7 +42,7 @@ const Hero = () => {
 
           <div className="flex justify-center items-center">
             <p className="md:text-5xl sm:text-4xl text-xl font-bold text-gray-500">
-              Intern at Hacktiv Colab Inc.
+              DLSU - D Fresh Graduate
             </p>
           </div>
           <div className="text-5xl flex justify-start gap-14 my-7 text-purple-600">
