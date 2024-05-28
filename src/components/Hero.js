@@ -40,12 +40,12 @@ const Hero = () => {
             />
           </h1>
 
-          <div className="flex justify-center items-center">
-            <p className="md:text-5xl sm:text-4xl text-xl font-bold text-gray-500">
+          <div className="flex justify-start items-center">
+            <p className="md:text-5xl sm:text-4xl text-2xl font-bold text-gray-500">
               DLSU - D Fresh Graduate
             </p>
           </div>
-          <div className="text-5xl flex justify-start gap-14 my-7 text-purple-600">
+          <div className="text-4xl md:text-5xl flex justify-start gap-14 my-7 text-purple-600">
             <a
               href="https://www.linkedin.com/in/mark-christian-velasco-365b74269/" // Replace this URL with your LinkedIn profile URL
               title="Visit my LinkedIn profile"
@@ -81,8 +81,8 @@ const Hero = () => {
 
             <PhoneButton />
           </div>
-          <div className="relative inline-flex group my-3">
-            <div className="absolute transition-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 "></div>
+          <div className="relative inline-flex group my-3  ">
+            <div className="absolute transition-all duration-1000  opacity-70 -inset-px bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 "></div>
             <a
               href="https://drive.google.com/uc?export=download&id=1isWNo2Gf5YeOt_wVFn3dZXaPzRNLNP4H"
               title="Download CV"
@@ -96,7 +96,7 @@ const Hero = () => {
 
         <div className="my-auto ">
           <img
-            className="w-[300px] sm:w-[500px] mx-auto h-auto"
+            className="lg:w-[400px] md:w-[200px] sm:w-[100px] ml-10 mx-auto h-auto"
             src={profilepic}
             alt="Profile pic"
           />

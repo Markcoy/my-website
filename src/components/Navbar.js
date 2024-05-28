@@ -30,7 +30,7 @@ const Navbar = () => {
       : "";
 
   return (
-    <div className="relative z-auto text-gray-500 flex justify-between items-center max-w-[1240px] mx-auto h-24 px-4 text-l">
+    <div className="relative z-10 text-gray-500 flex justify-between items-center max-w-[1240px] mx-auto h-24 px-4 text-l">
       <h1 className=" text-3xl font-bold primary-color ml-4">MACOY V.</h1>
       <ul className="hidden md:flex ">
         <li
@@ -115,14 +115,6 @@ const Navbar = () => {
             onClick={() => handleItemClick("Gallery", "/galle")}
           >
             Gallery
-          </li>
-          <li className="p-5">
-            <span
-              className="cursor-pointer transition-all duration-1000 bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] rounded-xl hover:opacity-100 hover:-inset-5 hover:duration-200 opacity-70 bg-transparent border-transparent border p-1 gradient-border"
-              onClick={() => navigate("/")}
-            >
-              Logout
-            </span>
           </li>
         </ul>
       </div>
