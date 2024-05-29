@@ -30,7 +30,7 @@ const Navbar = () => {
       : "";
 
   return (
-    <div className="border-b border-b-gray-900 bg-[#202121] relative z-10 text-gray-500 flex justify-between items-center max-w-auto  mx-auto h-24 px-4 text-l">
+    <div className="border-b shadow-xl border-b-gray-900 bg-[#202121] relative z-10 text-gray-500 flex justify-between items-center max-w-auto  mx-auto h-24 px-4 text-l">
       <h1 className=" text-3xl font-bold primary-color ml-4">MACOY V.</h1>
       <ul className="hidden md:flex ">
         <li
