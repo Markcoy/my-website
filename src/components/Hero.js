@@ -16,8 +16,8 @@ import PhoneButton from "../shared/PhoneButton";
 import About from "./About";
 const Hero = () => {
   return (
-    <div>
-      <div className="my-7 sm:my-0 max-w-[1200px] h-auto mx-auto flex flex-col-reverse sm:flex-row justify-center align-center">
+    <div className="">
+      <div className="  my-7 sm:my-0 max-w-[1200px] h-auto mx-auto flex flex-col-reverse sm:flex-row justify-center align-center">
         <div className="flex-col my-auto mx-auto md:mx-0">
           <p className="md:text-5xl sm:text-4xl text-xl font-bold text-gray-300">
             Hi! I am Macoy Velasco
@@ -51,6 +51,7 @@ const Hero = () => {
               title="Visit my LinkedIn profile"
               target="_blank" // This will open the link in a new tab
               rel="noopener noreferrer" // This is a best practice to prevent security vulnerabilities when opening new tabs
+              className="jump"
             >
               <AiFillLinkedin />
             </a>
@@ -58,7 +59,8 @@ const Hero = () => {
               href="https://github.com/Markcoy" // Replace this URL with your LinkedIn profile URL
               title="Visit my GitHub profile"
               target="_blank" // This will open the link in a new tab
-              rel="noopener noreferrer" // This is a best practice to prevent security vulnerabilities when opening new tabs
+              rel="noopener noreferrer"
+              className="jump"
             >
               <AiFillGithub />
             </a>
@@ -66,7 +68,8 @@ const Hero = () => {
               href="https://www.instagram.com/mccv__06/" // Replace this URL with your LinkedIn profile URL
               title="Visit my Instagram profile"
               target="_blank" // This will open the link in a new tab
-              rel="noopener noreferrer" // This is a best practice to prevent security vulnerabilities when opening new tabs
+              rel="noopener noreferrer"
+              className="jump"
             >
               <AiFillInstagram />
             </a>
@@ -74,7 +77,8 @@ const Hero = () => {
               href="https://www.facebook.com/profile.php?id=100080161555850" // Replace this URL with your LinkedIn profile URL
               title="Visit my Facebook profile"
               target="_blank" // This will open the link in a new tab
-              rel="noopener noreferrer" // This is a best practice to prevent security vulnerabilities when opening new tabs
+              rel="noopener noreferrer"
+              className="jump"
             >
               <AiFillFacebook />
             </a>

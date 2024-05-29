@@ -28,7 +28,7 @@ const PhoneButton = () => {
       <button
         onClick={copyPhoneNumber}
         title="Copy phone number"
-        className="text-4xl md:text-5xl"
+        className="text-4xl md:text-5xl jump"
       >
         <AiFillPhone />
       </button>
