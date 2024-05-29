@@ -67,7 +67,7 @@ const Navbar = () => {
         </li>
       </ul>
 
-      <div onClick={handleNav} className="block md:hidden">
+      <div onClick={handleNav} className="block md:hidden ">
         {nav ? (
           <AiOutlineClose className="cursor-pointer" size={20} />
         ) : (
@@ -82,7 +82,7 @@ const Navbar = () => {
             : "fixed left-[-100%]"
         }
       >
-        <h1 className=" text-3xl primary-color m-4">MACOY V.</h1>
+        <h1 className=" mt-8 text-3xl primary-color m-4">MACOY V.</h1>
         <ul className="p-8 text-2xl">
           <li
             className={`p-5 cursor-pointer transition-colors duration-300 hover:text-violet-300 ${
