@@ -16,7 +16,7 @@ import PhoneButton from "../shared/PhoneButton";
 import About from "./About";
 const Hero = () => {
   return (
-    <div className="">
+    <div className="mt-10">
       <div className="  my-7 sm:my-0 max-w-[1200px] h-auto mx-auto flex flex-col-reverse sm:flex-row justify-center align-center">
         <div className="flex-col my-auto mx-auto md:mx-0">
           <p className="md:text-5xl sm:text-4xl text-xl font-bold text-gray-300">
