@@ -48,7 +48,7 @@ const Hero = () => {
               DLSU - D Fresh Graduate
             </p>
           </div>
-          <div className="text-4xl md:text-5xl  flex flex-wrap justify-center gap-6 md:gap-8 lg:gap-14 my-7 text-purple-600">
+          <div className="text-4xl md:text-5xl  flex flex-wrap justify-center gap-4 md:gap-8 lg:gap-14 my-7 text-purple-600">
             <a
               href="https://www.linkedin.com/in/mark-christian-velasco-3138a0250/"
               title="Visit my LinkedIn profile"
