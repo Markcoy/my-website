@@ -11,9 +11,12 @@ import {
   AiFillGithub,
   AiFillInstagram,
   AiFillLinkedin,
+  AiFillMessage,
 } from "react-icons/ai";
 import PhoneButton from "../shared/PhoneButton";
 import About from "./About";
+import { MdEmail } from "react-icons/md";
+import EmailButton from "../shared/EmailButton";
 const Hero = () => {
   return (
     <div className="mt-10">
@@ -45,46 +48,47 @@ const Hero = () => {
               DLSU - D Fresh Graduate
             </p>
           </div>
-          <div className="text-4xl md:text-5xl flex justify-start gap-14 my-7 text-purple-600">
+          <div className="text-4xl md:text-5xl flex flex-wrap justify-center gap-6 md:gap-8 lg:gap-14 my-7 text-purple-600">
             <a
-              href="https://www.linkedin.com/in/mark-christian-velasco-365b74269/" // Replace this URL with your LinkedIn profile URL
+              href="https://www.linkedin.com/in/mark-christian-velasco-3138a0250/"
               title="Visit my LinkedIn profile"
-              target="_blank" // This will open the link in a new tab
-              rel="noopener noreferrer" // This is a best practice to prevent security vulnerabilities when opening new tabs
+              target="_blank"
+              rel="noopener noreferrer"
               className="jump"
             >
               <AiFillLinkedin />
             </a>
             <a
-              href="https://github.com/Markcoy" // Replace this URL with your LinkedIn profile URL
+              href="https://github.com/Markcoy"
               title="Visit my GitHub profile"
-              target="_blank" // This will open the link in a new tab
+              target="_blank"
               rel="noopener noreferrer"
               className="jump"
             >
               <AiFillGithub />
             </a>
             <a
-              href="https://www.instagram.com/mccv__06/" // Replace this URL with your LinkedIn profile URL
+              href="https://www.instagram.com/mccv__06/"
               title="Visit my Instagram profile"
-              target="_blank" // This will open the link in a new tab
+              target="_blank"
               rel="noopener noreferrer"
               className="jump"
             >
               <AiFillInstagram />
             </a>
             <a
-              href="https://www.facebook.com/profile.php?id=100080161555850" // Replace this URL with your LinkedIn profile URL
+              href="https://www.facebook.com/profile.php?id=100080161555850"
               title="Visit my Facebook profile"
-              target="_blank" // This will open the link in a new tab
+              target="_blank"
               rel="noopener noreferrer"
               className="jump"
             >
               <AiFillFacebook />
             </a>
-
+            <EmailButton />
             <PhoneButton />
           </div>
+
           <div className="relative inline-flex group my-3  ">
             <div className="absolute transition-all duration-1000  opacity-70 -inset-px bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 "></div>
             <a
