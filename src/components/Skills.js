@@ -10,8 +10,15 @@ import nodejs from "../assets/node.png";
 import CardDescL from "../shared/CardDescL";
 import CardDescR from "../shared/CardDescR.js";
 import CardFlip from "../shared/CardFlip.js";
+import RateTable from "../shared/RateTable.js";
 
 const Skills = () => {
+  const skills = [
+    { name: "C++", mastery: 7 },
+    { name: "JavaScript", mastery: 8 },
+    { name: "React", mastery: 6 },
+    { name: "CSS", mastery: 5 },
+  ];
   return (
     <div className="py-10 text-white bg-[@232325] h-auto flex justify-center">
       <div className="card-form bg-neutral-800 px-5 py-5 rounded-lg border border-gray-900">
@@ -40,7 +47,7 @@ const Skills = () => {
             </div>
           </div>
         </div>
-        <div className="mt-10 flex flex-wrap gap-4 justify-center">
+        <div className="mt-10 flex flex-wrap gap-5 justify-center">
           <CardFlip
             image={cplus}
             title="C++"
@@ -66,6 +73,10 @@ const Skills = () => {
             title="C++"
             description="I am knowledgeable to use C++ programming language because I used it via Arduino IDE for the device of our thesis, which is a student event tracker."
           />
+        </div>
+        <div className="p-6">
+          <span className="text-3xl font-bold mb-4">Skills and Mastery</span>
+          <RateTable skills={skills} />
         </div>
       </div>
     </div>
