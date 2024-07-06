@@ -48,7 +48,8 @@ const Skills = () => {
         <div className="p-6">
           <span className="text-3xl font-bold ml-4 mb-4">Skills</span>
         </div>
-        <div className="mt-6 flex flex-wrap gap-9 justify-center">
+
+        <div className="px-8 mt-6 grid md:grid-cols-3 lg:grid-cols-4 gap-8 justify-center">
           <div className="relative inline-flex group   ">
             <div className="absolute transition-all duration-1000  opacity-10 -inset-px bg-gradient-to-r from-[#993fff] via-[#02d4f0] to-[#dddddd] rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 "></div>
             <CardFlip
