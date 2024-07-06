@@ -1,5 +1,6 @@
 import React from "react";
 import profilepic from "../assets/profile_2.png";
+
 import pic1 from "../assets/p1.png";
 import pic2 from "../assets/p2.png";
 import pic3 from "../assets/p4.png";
@@ -15,8 +16,8 @@ import {
 } from "react-icons/ai";
 import PhoneButton from "../shared/PhoneButton";
 import About from "./About";
-import { MdEmail } from "react-icons/md";
 import EmailButton from "../shared/EmailButton";
+
 const Hero = () => {
   return (
     <div className="mt-10">

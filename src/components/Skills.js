@@ -9,6 +9,7 @@ import cisco from "../assets/cisco.png";
 import nodejs from "../assets/node.png";
 import CardDescL from "../shared/CardDescL";
 import CardDescR from "../shared/CardDescR.js";
+import CardFlip from "../shared/CardFlip.js";
 
 const Skills = () => {
   return (
@@ -39,48 +40,31 @@ const Skills = () => {
             </div>
           </div>
         </div>
-        <div className="mt-10">
-          <div>
-            <CardDescL
-              title="C++"
-              image={cplus}
-              description="I am knowledgeable to use C++ programming language because I used it via Arduino IDE for the device of our thesis, which is a student event tracker."
-            />
-
-            <CardDescR
-              title="MongoDB"
-              image={mongodb}
-              description="MongoDB is a unstructured database that I also utilized in making our capstone project. This database was also a topic when I was in third-year college, that is why I am familiar with it."
-            />
-          </div>
-          <CardDescL
-            title="Java"
+        <div className="mt-10 flex flex-wrap gap-4 justify-center">
+          <CardFlip
+            image={cplus}
+            title="C++"
+            description="I am knowledgeable to use C++ programming language because I used it via Arduino IDE for the device of our thesis, which is a student event tracker."
+          />
+          <CardFlip
+            image={mongodb}
+            title="MongoDB"
+            description="MongoDB is a unstructured database that I also utilized in making our capstone project. This database was also a topic when I was in third-year college, that is why I am familiar with it."
+          />
+          <CardFlip
             image={java}
+            title="Java"
             description="This is the first coding language that I learned. It is complex because it is a intermediate coding language, but when you get used to it, the logic and solving's would be easy."
           />
-
-          <CardDescR
-            title="NodeJS"
-            image={nodejs}
-            description="NodeJS was taught when I was in second-year college, it is fun because you will know how front-end and back-end works."
+          <CardFlip
+            image={cplus}
+            title="C++"
+            description="I am knowledgeable to use C++ programming language because I used it via Arduino IDE for the device of our thesis, which is a student event tracker."
           />
-
-          <CardDescL
-            title="Front-end Development"
-            image={front}
-            description="I sharpen my knowledge about front-end development when I started to do an internship with Hacktiv Colab Inc., at first I was skeptic to take this challenge since I was a networking student, but with enough perseverance and passion to work, I successfully do tasks like making a website design and etc."
-          />
-
-          <CardDescR
-            title="ReactJS"
-            image={react}
-            description="When I was a first-year student, I tried to explore the ReactJS. It is fun because you only need components to build a website. Unlike the usual HTML formats, ReactJS is more powerful and easy to use."
-          />
-
-          <CardDescL
-            title="Cisco Networking"
-            image={cisco}
-            description="I am knowledgeable to use Cisco routers and other devices for networking. I am also good in computing IP addresses and have knowledge in making VLANS, and providing robust security for a network."
+          <CardFlip
+            image={cplus}
+            title="C++"
+            description="I am knowledgeable to use C++ programming language because I used it via Arduino IDE for the device of our thesis, which is a student event tracker."
           />
         </div>
       </div>
