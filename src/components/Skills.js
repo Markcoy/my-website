@@ -7,8 +7,6 @@ import react from "../assets/react.png";
 import front from "../assets/frontend.png";
 import cisco from "../assets/cisco.png";
 import nodejs from "../assets/node.png";
-import CardDescL from "../shared/CardDescL";
-import CardDescR from "../shared/CardDescR.js";
 import CardFlip from "../shared/CardFlip.js";
 import RateTable from "../shared/RateTable.js";
 
@@ -21,7 +19,7 @@ const Skills = () => {
   ];
   return (
     <div className="py-10 text-white bg-[@232325] h-auto flex justify-center">
-      <div className="card-form bg-neutral-800 px-5 py-5 rounded-lg border border-gray-900">
+      <div>
         <div className="flex sm:flex-row flex-col-reverse items-center md-gap-6 gap-12 px-10 max-w-6xl mx auto ">
           <div>
             <div className="w-[400px] h-full">
@@ -47,7 +45,10 @@ const Skills = () => {
             </div>
           </div>
         </div>
-        <div className="mt-10 flex flex-wrap gap-5 justify-center">
+        <div className="p-6">
+          <span className="text-3xl font-bold ml-10 mb-4">Skills</span>
+        </div>
+        <div className="mt-6 flex flex-wrap gap-5 justify-center">
           <CardFlip
             image={cplus}
             title="C++"
@@ -61,22 +62,34 @@ const Skills = () => {
           <CardFlip
             image={java}
             title="Java"
-            description="This is the first coding language that I learned. It is complex because it is a intermediate coding language, but when you get used to it, the logic and solving's would be easy."
+            description="NodeJS was taught when I was in second-year college, it is fun because you will know how front-end and back-end works."
           />
           <CardFlip
-            image={cplus}
-            title="C++"
+            image={nodejs}
+            title="NodeJS"
             description="I am knowledgeable to use C++ programming language because I used it via Arduino IDE for the device of our thesis, which is a student event tracker."
           />
           <CardFlip
-            image={cplus}
-            title="C++"
-            description="I am knowledgeable to use C++ programming language because I used it via Arduino IDE for the device of our thesis, which is a student event tracker."
+            image={front}
+            title="Front-end Development"
+            description="I sharpen my knowledge about front-end development when I started to do an internship with Hacktiv Colab Inc., at first I was skeptic to take this challenge since I was a networking student, but with enough perseverance and passion to work, I successfully do tasks like making a website design and etc."
+          />
+          <CardFlip
+            image={react}
+            title="ReactJS"
+            description="When I was a first-year student, I tried to explore the ReactJS. It is fun because you only need components to build a website. Unlike the usual HTML formats, ReactJS is more powerful and easy to use."
+          />
+          <CardFlip
+            image={cisco}
+            title="Cisco Networking"
+            description="I am knowledgeable to use Cisco routers and other devices for networking. I am also good in computing IP addresses and have knowledge in making VLANS, and providing robust security for a network."
           />
         </div>
         <div className="p-6">
-          <span className="text-3xl font-bold mb-4">Skills and Mastery</span>
-          <RateTable skills={skills} />
+          <span className="text-3xl font-bold ml-10 mb-4">Mastery</span>
+          <div className="mt-6">
+            <RateTable skills={skills} />
+          </div>
         </div>
       </div>
     </div>

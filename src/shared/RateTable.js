@@ -26,33 +26,32 @@ const generateStars = (mastery) => {
 const RateTable = ({ skills }) => {
   return (
     <div className="overflow-x-auto p-6">
-      <div className="mx-auto max-w-4xl shadow-lg rounded-lg overflow-hidden">
-        <table className="min-w-full bg-white border border-gray-200">
+      <div className="mx-auto max-w-xl  shadow-lg rounded-lg  overflow-hidden">
+        <table className="min-w-full  bg-gray-700 border border-gray-800">
           <thead>
             <tr>
-              <th className="px-4 py-3 border text-left text-gray-900 bg-gray-100">
+              <th className="px-4 py-3 border font-bold text-center border-gray-800   text-gray-100 bg-gray-900">
                 Skills
               </th>
-              <th className="px-4 py-3 border text-left text-gray-900 bg-gray-100">
+              <th className="px-4 py-3 border font-bold text-lcenter border-gray-800 text-gray-100 bg-gray-900">
                 Mastery
-              </th>
-              <th className="px-4 py-3 border text-left text-gray-900 bg-gray-100">
-                Rate
               </th>
             </tr>
           </thead>
           <tbody>
             {skills.map((skill, index) => (
-              <tr key={index} className="hover:bg-gray-50">
-                <td className="px-4 py-3 border-b text-gray-800">
+              <tr key={index} className="hover:bg-gray-600">
+                <td className="px-4 py-3 border-b text-center border-gray-400 text-gray-200">
                   {skill.name}
                 </td>
-                <td className="px-4 py-3 border-b">
-                  <div className="flex items-center">
-                    {generateStars(skill.mastery)}
+                <td className="px-4 py-3 border-b border-gray-400">
+                  <div className="grid items-center">
+                    <p className="text-gray-400 text-center">{`${skill.mastery}/10`}</p>
+                    <p className="text-2xl text-center ">
+                      {generateStars(skill.mastery)}
+                    </p>
                   </div>
                 </td>
-                <td className="px-4 py-3 border-b text-gray-800">{`${skill.mastery}/10`}</td>
               </tr>
             ))}
           </tbody>
