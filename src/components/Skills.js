@@ -2,6 +2,11 @@ import React from "react";
 import skills from "../assets/skills.gif";
 import cplus from "../assets/C++.png";
 import mongodb from "../assets/mongodb.png";
+import powerbi from "../assets/powerbi.png";
+import arduino from "../assets/arduino.png";
+import python from "../assets/python.png";
+import canva from "../assets/canva.png";
+import office from "../assets/office.png";
 import java from "../assets/java.png";
 import react from "../assets/react.png";
 import front from "../assets/frontend.png";
@@ -9,18 +14,105 @@ import cisco from "../assets/cisco.png";
 import nodejs from "../assets/node.png";
 import CardFlip from "../shared/CardFlip.js";
 import RateTable from "../shared/RateTable.js";
+import useIntersectionObserver from "../shared/useIntersectionObserver";
 
 const Skills = () => {
   const skills = [
-    { name: "C++", mastery: 7 },
-    { name: "JavaScript", mastery: 8 },
-    { name: "React", mastery: 6 },
-    { name: "CSSdhfgfhdhfdfhdfhdf", mastery: 5 },
+    {
+      name: "C++",
+      mastery: 7,
+      image: cplus,
+      description:
+        "I am knowledgeable to use C++ programming language because I used it via Arduino IDE for the device of our thesis, which is a student event tracker.",
+    },
+    {
+      name: "MongoDB",
+      mastery: 8,
+      image: mongodb,
+      description:
+        "MongoDB is a unstructured database that I also utilized in making our capstone project. This database was also a topic when I was in third-year college, that is why I am familiar with it.",
+    },
+    {
+      name: "Java",
+      mastery: 6,
+      image: java,
+      description:
+        "NodeJS was taught when I was in second-year college, it is fun because you will know how front-end and back-end works.",
+    },
+    {
+      name: "NodeJS",
+      mastery: 5,
+      image: nodejs,
+      description:
+        "I am knowledgeable to use C++ programming language because I used it via Arduino IDE for the device of our thesis, which is a student event tracker.",
+    },
+    {
+      name: "Front-end Development",
+      mastery: 5,
+      image: front,
+      description:
+        "I sharpen my knowledge about front-end development when I started to do an internship with Hacktiv Colab Inc., at first I was skeptic to take this challenge since I was a networking student, but with enough perseverance and passion to work, I successfully do tasks like making a website design and etc.",
+    },
+    {
+      name: "ReactJS",
+      mastery: 5,
+      image: react,
+      description:
+        "When I was a first-year student, I tried to explore the ReactJS. It is fun because you only need components to build a website. Unlike the usual HTML formats, ReactJS is more powerful and easy to use.",
+    },
+    {
+      name: "Cisco Networking",
+      mastery: 5,
+      image: cisco,
+      description:
+        "I am knowledgeable to use Cisco routers and other devices for networking. I am also good in computing IP addresses and have knowledge in making VLANS, and providing robust security for a network.",
+    },
+    {
+      name: "Power BI",
+      mastery: 5,
+      image: powerbi,
+      description:
+        "I am knowledgeable to use Cisco routers and other devices for networking. I am also good in computing IP addresses and have knowledge in making VLANS, and providing robust security for a network.",
+    },
+    {
+      name: "Arduino",
+      mastery: 5,
+      image: arduino,
+      description:
+        "I am knowledgeable to use Cisco routers and other devices for networking. I am also good in computing IP addresses and have knowledge in making VLANS, and providing robust security for a network.",
+    },
+    {
+      name: "Python",
+      mastery: 5,
+      image: python,
+      description:
+        "I am knowledgeable to use Cisco routers and other devices for networking. I am also good in computing IP addresses and have knowledge in making VLANS, and providing robust security for a network.",
+    },
+    {
+      name: "Canva",
+      mastery: 5,
+      image: canva,
+      description:
+        "I am knowledgeable to use Cisco routers and other devices for networking. I am also good in computing IP addresses and have knowledge in making VLANS, and providing robust security for a network.",
+    },
+    {
+      name: "Microsoft Office",
+      mastery: 5,
+      image: office,
+      description:
+        "I am knowledgeable to use Cisco routers and other devices for networking. I am also good in computing IP addresses and have knowledge in making VLANS, and providing robust security for a network.",
+    },
   ];
+
+  const addElement = useIntersectionObserver({ threshold: 0.1 });
+
   return (
     <div className="py-6 max-w-[1200px] mx-auto h-auto flex justify-center">
       <div className="card-form bg-neutral-800 px-2 py-5 rounded-lg border border-gray-900">
-        <div className="flex sm:flex-row flex-col-reverse items-center md-gap-6 gap-12 px-10 max-w-6xl mx auto ">
+        <div
+          className="skill-card flex sm:flex-row flex-col-reverse items-center md-gap-6 gap-12 px-10 max-w-6xl mx auto "
+          ref={addElement}
+        >
           <div>
             <div className="w-[400px] h-full">
               <img
@@ -50,66 +142,24 @@ const Skills = () => {
         </div>
 
         <div className="px-8 mt-6 grid md:grid-cols-3 lg:grid-cols-4 gap-8 justify-center">
-          <div className="relative inline-flex group   ">
-            <div className="absolute transition-all duration-1000  opacity-10 -inset-px bg-gradient-to-r from-[#993fff] via-[#02d4f0] to-[#dddddd] rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 "></div>
-            <CardFlip
-              image={cplus}
-              title="C++"
-              description="I am knowledgeable to use C++ programming language because I used it via Arduino IDE for the device of our thesis, which is a student event tracker."
-            />
-          </div>
-          <div className="relative inline-flex group   ">
-            <div className="absolute transition-all duration-1000  opacity-10 -inset-px bg-gradient-to-r from-[#993fff] via-[#02d4f0] to-[#dddddd] rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 "></div>
-            <CardFlip
-              image={mongodb}
-              title="MongoDB"
-              description="MongoDB is a unstructured database that I also utilized in making our capstone project. This database was also a topic when I was in third-year college, that is why I am familiar with it."
-            />
-          </div>
-          <div className="relative inline-flex group   ">
-            <div className="absolute transition-all duration-1000  opacity-10 -inset-px bg-gradient-to-r from-[#993fff] via-[#02d4f0] to-[#dddddd] rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 "></div>
-            <CardFlip
-              image={java}
-              title="Java"
-              description="NodeJS was taught when I was in second-year college, it is fun because you will know how front-end and back-end works."
-            />
-          </div>
-          <div className="relative inline-flex group   ">
-            <div className="absolute transition-all duration-1000  opacity-10 -inset-px bg-gradient-to-r from-[#993fff] via-[#02d4f0] to-[#dddddd] rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 "></div>
-            <CardFlip
-              image={nodejs}
-              title="NodeJS"
-              description="I am knowledgeable to use C++ programming language because I used it via Arduino IDE for the device of our thesis, which is a student event tracker."
-            />
-          </div>
-          <div className="relative inline-flex group   ">
-            <div className="absolute transition-all duration-1000  opacity-10 -inset-px bg-gradient-to-r from-[#993fff] via-[#02d4f0] to-[#dddddd] rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 "></div>
-            <CardFlip
-              image={front}
-              title="Front-end Development"
-              description="I sharpen my knowledge about front-end development when I started to do an internship with Hacktiv Colab Inc., at first I was skeptic to take this challenge since I was a networking student, but with enough perseverance and passion to work, I successfully do tasks like making a website design and etc."
-            />
-          </div>
-          <div className="relative inline-flex group   ">
-            <div className="absolute transition-all duration-1000  opacity-10 -inset-px bg-gradient-to-r from-[#993fff] via-[#02d4f0] to-[#dddddd] rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 "></div>
-            <CardFlip
-              image={react}
-              title="ReactJS"
-              description="When I was a first-year student, I tried to explore the ReactJS. It is fun because you only need components to build a website. Unlike the usual HTML formats, ReactJS is more powerful and easy to use."
-            />
-          </div>
-          <div className="relative inline-flex group   ">
-            <div className="absolute transition-all duration-1000  opacity-10 -inset-px bg-gradient-to-r from-[#993fff] via-[#02d4f0] to-[#dddddd] rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 "></div>
-            <CardFlip
-              image={cisco}
-              title="Cisco Networking"
-              description="I am knowledgeable to use Cisco routers and other devices for networking. I am also good in computing IP addresses and have knowledge in making VLANS, and providing robust security for a network."
-            />
-          </div>
+          {skills.map((skill, index) => (
+            <div
+              key={index}
+              className="relative inline-flex group skill-card"
+              ref={addElement}
+            >
+              <div className="absolute transition-all duration-1000 opacity-10 -inset-px bg-gradient-to-r from-[#993fff] via-[#02d4f0] to-[#dddddd] rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200"></div>
+              <CardFlip
+                image={skill.image}
+                title={skill.name}
+                description={skill.description}
+              />
+            </div>
+          ))}
         </div>
-        <div className="p-6 ">
+        <div className="p-6 skill-card" ref={addElement}>
           <span className="text-3xl font-bold ml-4 mb-4">Mastery</span>
-          <div className="mt-6  flex flex-wrap justify-center">
+          <div className="mt-6 flex flex-wrap justify-center">
             <RateTable skills={skills} />
           </div>
         </div>

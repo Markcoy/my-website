@@ -19,7 +19,7 @@ const CardFlip = ({ image, title, description }) => {
             <img
               src={image}
               alt="Front Image"
-              className="p-3 w-full h-full object-cover "
+              className="p-10 w-full h-full object-cover "
             />
           </div>
           <div className="absolute w-full h-full bg-stone-200 rounded-lg text-center backface-hidden rotate-y-180">

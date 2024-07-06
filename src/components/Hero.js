@@ -1,6 +1,6 @@
 import React from "react";
 import profilepic from "../assets/profile_2.png";
-
+import useIntersectionObserver from "../shared/useIntersectionObserver";
 import pic1 from "../assets/p1.png";
 import pic2 from "../assets/p2.png";
 import pic3 from "../assets/p4.png";
@@ -19,9 +19,13 @@ import About from "./About";
 import EmailButton from "../shared/EmailButton";
 
 const Hero = () => {
+  const addElement = useIntersectionObserver({ threshold: 0.1 });
   return (
     <div className="mt-10">
-      <div className="  my-7 sm:my-0 max-w-[1200px] h-auto mx-auto flex flex-col-reverse sm:flex-row justify-center align-center">
+      <div
+        className=" skill-card my-7 sm:my-0 max-w-[1200px] h-auto mx-auto flex flex-col-reverse sm:flex-row justify-center align-center"
+        ref={addElement}
+      >
         <div className="flex-col my-auto mx-auto ml-6 md:mx-0">
           <p className="md:text-5xl sm:text-4xl text-xl font-bold text-gray-300">
             Hi! I am Macoy Velasco
@@ -117,7 +121,7 @@ const Hero = () => {
         </div>
       </div>
       {/* For Pics */}
-      <div className="flex justify-center mt-2">
+      <div className="flex justify-center mt-2 skill-card" ref={addElement}>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-1 sm:gap-1 lg:gap-8">
           {/* Image 1 */}
           <div className="group h-48 w-48 sm:h-64 sm:w-64 md:h-64 md:w-64 overflow-hidden rounded-lg shadow-lg">
@@ -140,8 +144,9 @@ const Hero = () => {
           </div>
         </div>
       </div>
-
-      <About />
+      <div className="skill-card" ref={addElement}>
+        <About />
+      </div>
     </div>
   );
 };
