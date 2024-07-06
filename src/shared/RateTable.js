@@ -41,13 +41,13 @@ const RateTable = ({ skills }) => {
           <tbody>
             {skills.map((skill, index) => (
               <tr key={index} className="hover:bg-gray-600">
-                <td className="px-4 py-3 border-b text-center border-gray-400 text-gray-200">
+                <td className=" py-3 border-b text-center px-10 border-gray-400 text-gray-200">
                   {skill.name}
                 </td>
                 <td className="px-4 py-3 border-b border-gray-400">
                   <div className="grid items-center">
                     <p className="text-gray-400 text-center">{`${skill.mastery}/10`}</p>
-                    <p className="text-2xl text-center ">
+                    <p className="text-2xl text-center px-10 ">
                       {generateStars(skill.mastery)}
                     </p>
                   </div>

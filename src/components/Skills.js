@@ -15,7 +15,7 @@ const Skills = () => {
     { name: "C++", mastery: 7 },
     { name: "JavaScript", mastery: 8 },
     { name: "React", mastery: 6 },
-    { name: "CSS", mastery: 5 },
+    { name: "CSSdhfgfhdhfdfhdfhdf", mastery: 5 },
   ];
   return (
     <div className="py-10 text-white bg-[@232325] h-auto flex justify-center">
@@ -85,9 +85,9 @@ const Skills = () => {
             description="I am knowledgeable to use Cisco routers and other devices for networking. I am also good in computing IP addresses and have knowledge in making VLANS, and providing robust security for a network."
           />
         </div>
-        <div className="p-6">
+        <div className="p-6 ">
           <span className="text-3xl font-bold ml-10 mb-4">Mastery</span>
-          <div className="mt-6">
+          <div className="mt-6  flex flex-wrap justify-center">
             <RateTable skills={skills} />
           </div>
         </div>
