@@ -114,8 +114,8 @@ const Skills = () => {
         <Parallax bgImage={para} strength={500} className="rounded-xl">
           <div className="flex flex-col-reverse items-center px-6 md:px-10 max-w-6xl mx-auto h-[400px]">
             <div className="flex justify-center text-balance  md:justify-start items-center gap-6 md:flex-row flex-col-reverse">
-              <div className="bg-stone-700 shadow-xl font-semibold bg-opacity-60 rounded-lg px-2 py-2 text-6xl jump text-gray-300 text-center mb-[150px] ">
-                <span>Skills and</span> Mastery
+              <div className="bg-violet-900 shadow-xl font-semibold bg-opacity-50 rounded-lg px-2 py-2 text-5xl jump text-gray-300 text-center mb-[150px] ">
+                Skills and Mastery
               </div>
             </div>
           </div>
