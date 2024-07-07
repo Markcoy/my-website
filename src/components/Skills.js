@@ -1,5 +1,7 @@
 import React from "react";
-import skills from "../assets/skills.gif";
+import { Parallax } from "react-parallax";
+import para from "../assets/bg_1.png";
+import skillsImage from "../assets/skills.png";
 import cplus from "../assets/C++.png";
 import mongodb from "../assets/mongodb.png";
 import powerbi from "../assets/powerbi.png";
@@ -8,7 +10,7 @@ import python from "../assets/python.png";
 import canva from "../assets/canva.png";
 import office from "../assets/office.png";
 import java from "../assets/java.png";
-import react from "../assets/react.png";
+import reactImage from "../assets/react.png";
 import front from "../assets/frontend.png";
 import cisco from "../assets/cisco.png";
 import nodejs from "../assets/node.png";
@@ -56,7 +58,7 @@ const Skills = () => {
     {
       name: "ReactJS",
       mastery: 5,
-      image: react,
+      image: reactImage,
       description:
         "When I was a first-year student, I tried to explore the ReactJS. It is fun because you only need components to build a website. Unlike the usual HTML formats, ReactJS is more powerful and easy to use.",
     },
@@ -109,34 +111,16 @@ const Skills = () => {
   return (
     <div className="py-6 max-w-[1200px] mx-auto h-auto flex justify-center">
       <div className="card-form bg-neutral-800 px-2 py-5 rounded-lg border border-gray-900">
-        <div
-          className="skill-card flex sm:flex-row flex-col-reverse items-center md-gap-6 gap-12 px-10 max-w-6xl mx auto "
-          ref={addElement}
-        >
-          <div>
-            <div className="w-[400px] h-full">
-              <img
-                src={skills}
-                alt=""
-                className="object-cover bg-transparent rounded-xl h-[300px] pl-10"
-              />
-            </div>
-          </div>
-
-          <div>
-            <div className="p-auto">
-              <div className="text-gray-300 my-3">
-                <h3 className="text-4xl font-semibold mb-5">
-                  My <span> Skills</span>
-                </h3>
-                <p className="text-justify leading-7 w-11/12 mx auto">
-                  These are the my skills or lists of technologies I am
-                  knowlegeable.
-                </p>
+        <Parallax bgImage={para} strength={500} className="rounded-xl">
+          <div className="flex flex-col-reverse items-center px-6 md:px-10 max-w-6xl mx-auto h-[400px]">
+            <div className="flex justify-center text-balance  md:justify-start items-center gap-6 md:flex-row flex-col-reverse">
+              <div className="bg-stone-700 shadow-xl font-semibold bg-opacity-60 rounded-lg px-2 py-2 text-6xl jump text-gray-300 text-center mb-[150px] ">
+                <span>Skills and</span> Mastery
               </div>
             </div>
           </div>
-        </div>
+        </Parallax>
+
         <div className="p-6">
           <span className="text-3xl font-bold ml-4 mb-4">Skills</span>
         </div>
@@ -157,6 +141,7 @@ const Skills = () => {
             </div>
           ))}
         </div>
+
         <div className="p-6 skill-card" ref={addElement}>
           <span className="text-3xl font-bold ml-4 mb-4">Mastery</span>
           <div className="mt-6 flex flex-wrap justify-center">
