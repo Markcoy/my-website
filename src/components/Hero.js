@@ -97,8 +97,7 @@ const Hero = () => {
           <div className="relative inline-flex group my-3  ">
             <div className="absolute transition-all duration-1000  opacity-70 -inset-px bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 "></div>
             <a
-              href="https://drive.google.com/uc?export=download&id=1Ft-DdfBPl9S74rOdg7TIPfc04EIBLAlB
-              
+              href="https://drive.google.com/uc?export=download&id=1hV-4kRvpQfyLFEVa70mR0zn4PpBCkXr-
 
 
 
