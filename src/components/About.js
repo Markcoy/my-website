@@ -21,7 +21,7 @@ const About = () => {
                 <h3 className="text-4xl font-semibold mb-5">
                   About <span> Me</span>
                 </h3>
-                <p className="text-justify leading-7 w-11/12 mx auto">
+                <p className="text-justify leading-7 w-11/12 mx-auto">
                   "Hello! Welcome to my Page. I am Mark Christian C. Velasco, 23
                   years old, from Dasmariñas City, Cavite. I graduated Bs
                   Information technology specialized in Networking at De La

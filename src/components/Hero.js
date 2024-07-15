@@ -17,16 +17,18 @@ import {
 import PhoneButton from "../shared/PhoneButton";
 import About from "./About";
 import EmailButton from "../shared/EmailButton";
+import Expe from ".//Expe";
+import Contact from "./Contact";
 
 const Hero = () => {
   const addElement = useIntersectionObserver({ threshold: 0.1 });
   return (
     <div className="mt-10">
       <div
-        className=" skill-card my-7 sm:my-0 max-w-[1200px] h-auto mx-auto flex flex-col-reverse sm:flex-row justify-center align-center"
+        className=" skill-card my-7 sm:my-0 max-w-[1200px]  h-auto mx-auto flex flex-col-reverse sm:flex-row justify-center align-center"
         ref={addElement}
       >
-        <div className="flex-col my-auto mx-auto ml-6 md:mx-0">
+        <div className="flex-col my-auto mx-auto ml-6 md:mx-0 ">
           <p className="md:text-5xl sm:text-4xl text-xl font-bold text-gray-300">
             Hi! I am Macoy Velasco
           </p>
@@ -143,9 +145,17 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div className="skill-card" ref={addElement}>
+      <div className="mt-10 skill-card" ref={addElement}>
         <About />
       </div>
+      <div className="skill-card" ref={addElement}>
+        <Expe />
+      </div>
+      <div className="py-4"></div>
+      <div className="mt-10 mb-10 skill-card" ref={addElement}>
+        <Contact />
+      </div>
+      <div className="py-6"></div>
     </div>
   );
 };

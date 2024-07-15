@@ -110,10 +110,15 @@ const Skills = () => {
   return (
     <div className="py-6 max-w-[1200px] mx-auto h-auto flex justify-center">
       <div className="card-form bg-neutral-800 px-2 py-5 rounded-lg border border-gray-900">
-        <Parallax bgImage={para} strength={500} className="rounded-xl">
+        <Parallax
+          bgImage={para}
+          blur={2}
+          strength={500}
+          className="rounded-xl "
+        >
           <div className="flex flex-col-reverse items-center px-6 md:px-10 max-w-6xl mx-auto h-[400px]">
             <div className="flex justify-center text-balance md:justify-start items-center gap-6 md:flex-row flex-col-reverse">
-              <div className="bg-gray-900 shadow-xl font-semibold bg-opacity-70 rounded-lg px-2 py-2 text-5xl md:text-4xl sm:text-3xl text-gray-100 text-center mb-[150px]">
+              <div className=" bg-gray-900 shadow-xl font-semibold bg-opacity-70 rounded-lg px-2 py-2 text-5xl md:text-4xl sm:text-3xl text-gray-100 text-center mb-[150px]">
                 <div className="max-w-[90%] sm:max-w-[100%] mx-auto">
                   Skills and Mastery
                 </div>
