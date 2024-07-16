@@ -1,6 +1,7 @@
 import React from "react";
 import { AiFillLinkedin } from "react-icons/ai";
 import { BsEnvelope } from "react-icons/bs";
+import { FaFacebookMessenger } from "react-icons/fa";
 import { MdOutlineEmail } from "react-icons/md";
 import Toastify from "toastify-js";
 import "toastify-js/src/toastify.css";
@@ -43,7 +44,7 @@ const Contact = () => {
     <div className="flex justify-center my-auto  h-full sm:h-[70vh] items-center">
       <div className="max-w-[1200px] mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2">
-          <div className="p-8 mr-2 bg-gray-800 rounded-xl flex flex-col justify-around">
+          <div className="p-10 m-auto  bg-gray-800 rounded-xl flex flex-col justify-starts">
             <h1 className="text-2xl sm:text-4xl text-white">
               Contact <span>me</span>
             </h1>
@@ -51,7 +52,7 @@ const Contact = () => {
               Let's connect on LinkedIn <br /> or send me an Email
             </p>
             <div className=" flex flex-wrap justify-start gap-2 sm:gap-4  ">
-              <div className="mt-4  rounded-md hover:opacity-70 shadow-md shadow-gray-900">
+              <div className="mt-4  rounded-md hover:opacity-70 shadow-sm shadow-black">
                 <a
                   href="https://www.linkedin.com/in/mark-christian-velasco-3138a0250/"
                   title="Visit my LinkedIn profile"
@@ -63,19 +64,30 @@ const Contact = () => {
                 </a>
               </div>
               <div className=" flex items-center pt-3 text-gray-300 font-medium">
+                <p className="text-sm sm:text-md">Mark Christian C. Velasco</p>
+              </div>
+            </div>
+            <div className=" flex flex-wrap justify-start gap-2 sm:gap-4  ">
+              <div className="mt-4  rounded-md  shadow-sm shadow-black">
+                <BsEnvelope className="text-white" size={30} />
+              </div>
+              <div className=" flex items-center pt-3 text-gray-300 font-medium">
                 <p className="text-sm sm:text-md">macoy.velasco12@gmail.com</p>
               </div>
             </div>
-            <div className="flex items-center mt-2 text-gray-400">
-              <svg
-                fill="none"
-                stroke="currentColor"
-                strokeLinecap="round"
-                stroke-linejoin="round"
-              ></svg>
-
-              <div className="ml-4 text-md tracking-wide w-20">
-                <MdOutlineEmail className="text-[30px] sm:text-[50px]" />
+            <div className=" flex flex-wrap justify-start gap-2 sm:gap-4  ">
+              <div className="mt-4  rounded-md  hover:opacity-70 shadow-sm shadow-black">
+                <a
+                  href="https://www.facebook.com/profile.php?id=100080161555850"
+                  title="Visit my Facebook profile"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaFacebookMessenger className="text-white" size={30} />
+                </a>
+              </div>
+              <div className=" flex items-center pt-3 text-gray-300 font-medium">
+                <p className="text-sm sm:text-md">m.me/mcvelasco06</p>
               </div>
             </div>
           </div>

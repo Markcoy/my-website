@@ -152,7 +152,7 @@ const Hero = () => {
         <Expe />
       </div>
       <div className="py-4"></div>
-      <div className="mt-10 mb-10 skill-card" ref={addElement}>
+      <div className=" skill-card" ref={addElement}>
         <Contact />
       </div>
       <div className="py-6"></div>
