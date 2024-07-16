@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { AiFillLinkedin } from "react-icons/ai";
 import { BsEnvelope } from "react-icons/bs";
 import { FaFacebookMessenger } from "react-icons/fa";
@@ -7,10 +7,13 @@ import "toastify-js/src/toastify.css";
 import confetti from "canvas-confetti";
 
 const Contact = () => {
+  const [loading, setLoading] = useState(false);
+
   const handleSubmit = async (event) => {
     event.preventDefault();
     const form = event.target;
     const data = new FormData(form);
+    setLoading(true); // Disable the button
 
     try {
       const response = await fetch(form.action, {
@@ -38,6 +41,8 @@ const Contact = () => {
         backgroundColor: "linear-gradient(to right, #ff5f6d, #ffc371)",
         className: "info",
       }).showToast();
+    } finally {
+      setLoading(false); // Re-enable the button
     }
   };
 
@@ -50,42 +55,42 @@ const Contact = () => {
   };
 
   return (
-    <div className="flex justify-center my-auto  h-full sm:h-[70vh] items-center">
+    <div className="flex justify-center my-auto h-full sm:h-[70vh] items-center">
       <div className="max-w-[1200px] mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2">
-          <div className="p-10 m-auto  bg-gray-800 rounded-xl flex flex-col justify-starts">
+          <div className="p-10 m-auto bg-gray-800 rounded-xl flex flex-col justify-start">
             <h1 className="text-2xl sm:text-4xl text-white">
               Contact <span>me</span>
             </h1>
-            <p className=" text-md font-medium text-gray-400 mt-2">
+            <p className="text-md font-medium text-gray-400 mt-2">
               Let's connect on LinkedIn <br /> or send me an Email
             </p>
-            <div className=" flex flex-wrap justify-start gap-2 sm:gap-4  ">
-              <div className="mt-4  rounded-md hover:opacity-70 shadow-sm shadow-black">
+            <div className="flex flex-wrap justify-start gap-2 sm:gap-4">
+              <div className="mt-4 rounded-md hover:opacity-70 shadow-sm shadow-black">
                 <a
                   href="https://www.linkedin.com/in/mark-christian-velasco-3138a0250/"
                   title="Visit my LinkedIn profile"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-white "
+                  className="text-white"
                 >
                   <AiFillLinkedin size={30} />
                 </a>
               </div>
-              <div className=" flex items-center pt-3 text-gray-300 font-medium">
+              <div className="flex items-center pt-3 text-gray-300 font-medium">
                 <p className="text-sm sm:text-md">Mark Christian C. Velasco</p>
               </div>
             </div>
-            <div className=" flex flex-wrap justify-start gap-2 sm:gap-4  ">
-              <div className="mt-4  rounded-md  shadow-sm shadow-black">
+            <div className="flex flex-wrap justify-start gap-2 sm:gap-4">
+              <div className="mt-4 rounded-md shadow-sm shadow-black">
                 <BsEnvelope className="text-white" size={30} />
               </div>
-              <div className=" flex items-center pt-3 text-gray-300 font-medium">
+              <div className="flex items-center pt-3 text-gray-300 font-medium">
                 <p className="text-sm sm:text-md">macoy.velasco12@gmail.com</p>
               </div>
             </div>
-            <div className=" flex flex-wrap justify-start gap-2 sm:gap-4  ">
-              <div className="mt-4  rounded-md  hover:opacity-70 shadow-sm shadow-black">
+            <div className="flex flex-wrap justify-start gap-2 sm:gap-4">
+              <div className="mt-4 rounded-md hover:opacity-70 shadow-sm shadow-black">
                 <a
                   href="https://www.facebook.com/profile.php?id=100080161555850"
                   title="Visit my Facebook profile"
@@ -95,7 +100,7 @@ const Contact = () => {
                   <FaFacebookMessenger className="text-white" size={30} />
                 </a>
               </div>
-              <div className=" flex items-center pt-3 text-gray-300 font-medium">
+              <div className="flex items-center pt-3 text-gray-300 font-medium">
                 <p className="text-sm sm:text-md">m.me/mcvelasco06</p>
               </div>
             </div>
@@ -139,8 +144,9 @@ const Contact = () => {
             <button
               type="submit"
               className="bg-primary-color text-white py-3 px-6 rounded-lg mt-3 hover:opacity-80"
+              disabled={loading} // Disable button when loading
             >
-              Submit
+              {loading ? "Submitting..." : "Submit"}
             </button>
           </form>
         </div>
