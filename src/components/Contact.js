@@ -2,9 +2,9 @@ import React from "react";
 import { AiFillLinkedin } from "react-icons/ai";
 import { BsEnvelope } from "react-icons/bs";
 import { FaFacebookMessenger } from "react-icons/fa";
-import { MdOutlineEmail } from "react-icons/md";
 import Toastify from "toastify-js";
 import "toastify-js/src/toastify.css";
+import confetti from "canvas-confetti";
 
 const Contact = () => {
   const handleSubmit = async (event) => {
@@ -28,6 +28,7 @@ const Contact = () => {
           className: "info",
         }).showToast();
         form.reset();
+        triggerConfetti();
       } else {
         throw new Error("Form submission failed");
       }
@@ -38,6 +39,14 @@ const Contact = () => {
         className: "info",
       }).showToast();
     }
+  };
+
+  const triggerConfetti = () => {
+    confetti({
+      particleCount: 100,
+      spread: 70,
+      origin: { y: 0.6 },
+    });
   };
 
   return (
