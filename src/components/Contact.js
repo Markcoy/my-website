@@ -5,6 +5,7 @@ import { FaFacebookMessenger } from "react-icons/fa";
 import Toastify from "toastify-js";
 import "toastify-js/src/toastify.css";
 import confetti from "canvas-confetti";
+import ClipLoader from "react-spinners/ClipLoader"; // Import the ClipLoader spinner
 
 const Contact = () => {
   const [loading, setLoading] = useState(false);
@@ -146,7 +147,7 @@ const Contact = () => {
               className="bg-primary-color text-white py-3 px-6 rounded-lg mt-3 hover:opacity-80"
               disabled={loading} // Disable button when loading
             >
-              {loading ? "Submitting..." : "Submit"}
+              {loading ? <ClipLoader size={24} color="#fff" /> : "Submit"}
             </button>
           </form>
         </div>

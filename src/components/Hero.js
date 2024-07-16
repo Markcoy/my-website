@@ -151,7 +151,7 @@ const Hero = () => {
       <div className="skill-card" ref={addElement}>
         <Expe />
       </div>
-      <div className="py-3"></div>
+      <div className="py-4"></div>
       <div className=" skill-card" ref={addElement}>
         <Contact />
       </div>
