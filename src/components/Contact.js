@@ -107,7 +107,7 @@ const Contact = () => {
             </div>
           </div>
           <form
-            action="https://script.google.com/macros/s/AKfycbyCsAbpfZ02rJMqMmcJLDJMmBIJNIFk_61gmCPE9TM3GZwppwMWp9o0fCTrzol-kfBFmw/exec"
+            action="https://script.google.com/macros/s/AKfycbzG9eqEDuLBWMKk_W2Hi1Pv95dML5MOFpF46x--WaElzPjL6GIqzTB9uAguyKBk8eT0/exec"
             method="post"
             className="p-6 flex flex-col justify-center max-w-[700px]"
             onSubmit={handleSubmit}
