@@ -25,7 +25,7 @@ const Hero = () => {
   return (
     <div className="mt-10">
       <div
-        className=" skill-card my-7 sm:my-0 max-w-[1200px]  h-auto mx-auto flex flex-col-reverse sm:flex-row justify-center align-center"
+        className=" skill-card my-7 sm:my-0 max-w-[1200px] items-center h-auto mx-auto flex flex-col-reverse sm:flex-row justify-center align-center"
         ref={addElement}
       >
         <div className="flex-col my-auto mx-auto ml-6 md:mx-0 ">

@@ -16,6 +16,13 @@ import nodejs from "../assets/node.png";
 import CardFlip from "../shared/CardFlip.js";
 import RateTable from "../shared/RateTable.js";
 import useIntersectionObserver from "../shared/useIntersectionObserver";
+import Certificate from "../shared/Certificate.js";
+import coursera from "../assets/it_sup.pdf";
+import itsupp from "../assets/it_supp.png";
+import da from "../assets/da.JPG";
+import bpi from "../assets/da.pdf";
+import bigd from "../assets/bigd.png";
+import dict from "../assets/dict.pdf";
 
 const Skills = () => {
   const skills = [
@@ -120,14 +127,14 @@ const Skills = () => {
             <div className="flex justify-center text-balance md:justify-start items-center gap-6 md:flex-row flex-col-reverse">
               <div className=" bg-gray-900 shadow-xl font-semibold bg-opacity-70 rounded-lg px-2 py-2 text-5xl md:text-4xl sm:text-3xl text-gray-100 text-center mb-[150px]">
                 <div className="max-w-[90%] sm:max-w-[100%] mx-auto">
-                  Skills and Mastery
+                  Skills, Mastery, and Certificates
                 </div>
               </div>
             </div>
           </div>
         </Parallax>
 
-        <div className="p-6">
+        <div className="p-6 mt-4">
           <span className="text-3xl font-bold ml-4 mb-4">Skills</span>
         </div>
 
@@ -148,10 +155,39 @@ const Skills = () => {
           ))}
         </div>
 
-        <div className="p-6 skill-card" ref={addElement}>
-          <span className="text-3xl font-bold ml-4 mb-4">Mastery</span>
-          <div className="mt-6 flex flex-wrap justify-center">
-            <RateTable skills={skills} />
+        <div className="p-6 skill-card mt-4 " ref={addElement}>
+          <div className="flex justify-center">
+            <span className="text-3xl font-bold ml-4  ">
+              Mastery and Certificates
+            </span>
+          </div>
+          <div className="mt-6 flex flex-wrap  justify-between">
+            <div className="flex-1">
+              <RateTable skills={skills} />
+            </div>
+            <div className="flex-1 ">
+              <div id="root">
+                <Certificate
+                  imageSrc={itsupp}
+                  title="Technical Support Fundamentals - Coursera"
+                  pdfSrc={coursera}
+                />
+              </div>
+              <div id="root">
+                <Certificate
+                  imageSrc={da}
+                  title="Data Analytics 101 - BPI Foundation"
+                  pdfSrc={bpi}
+                />
+              </div>
+              <div id="root">
+                <Certificate
+                  imageSrc={bigd}
+                  title="Big Data Fundamentals - DICT Philippines"
+                  pdfSrc={dict}
+                />
+              </div>
+            </div>
           </div>
         </div>
       </div>

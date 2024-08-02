@@ -45,13 +45,13 @@ const RateTable = ({ skills }) => {
                   {skill.name}
                 </td>
                 <td className="px-4 py-3 border-b border-gray-400">
-                  <div className="flex flex-col items-center sm:flex-row sm:items-center">
-                    <p className="text-gray-400 text-center mb-2 sm:mb-0 sm:mr-4">
+                  <div className="flex flex-col items-center sm:items-center sm:flex-row sm:justify-center">
+                    <p className="text-gray-400 text-center mb-2 sm:mb-0 px-8 sm:mr-4">
                       {`${skill.mastery}/10`}
                     </p>
-                    <p className="text-2xl text-center">
+                    <div className="flex p-4 flex-wrap justify-center text-2xl">
                       {generateStars(skill.mastery)}
-                    </p>
+                    </div>
                   </div>
                 </td>
               </tr>
